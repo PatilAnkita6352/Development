@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+	 $('#st').hide();
+	 $('#ci').hide();
+	 fetch('count.json')
+	 .then(response=> response.json())
+	 .then(data => {
+		 $('#st').hide();
+		 var countryselect='<option value="">Enter Country</option>';
+		 $.each(data, function(index, country){
+      		 countryselect+='<option value="'+country+'">'+country+'</option>';
+		 });
+		  $('#co').append(countryselect);
+		  var c=$('#co').val();
+		  console.log(c);
+	 }).catch(err =>{
+	     console.log(err);
+	 });
+	 $("#co").change(function(){
+		$('#ci').html('<option value="">Enter City</option>');
+		$('#st').show();
+		fetch('state.json')
+		.then(response=> response.json())
+		.then(data => {
+			var stateselect='<option value="">Enter state</option>';
+			var countries=$('#co').val();
+			if(countries){
+				$.each(data, function(index, states){
+					if(states.country == countries){
+						stateselect+='<option value="'+states.state+'">'+states.state+'</option>';
+					}
+				});
+			}else{
+				$('#ci').html('<option value="">Enter City</option>');
+				$('#st').html('<option value="">Enter state</option>');
+			}
+			$('#st').html(stateselect);
+		})
+		.catch(err => {
+			console.log(err);
+		});
+	 });
+	 $("#st").change(function(){
+		$('#ci').show();
+		$('#ci').html('<option value="">Enter City</option>');
+		var countryname=$('#co').val();
+		fetch('city.json')
+		.then(response=> response.json())
+		.then(data=> {
+			var cityselect='<option value="">Enter City</option>';
+			$.each(data,function(index, country){
+				if(country.name == countryname){
+					var statename=$('#st').val();
+					$.each(country.states, function(index, state){
+						if(state.name == statename){
+							$.each(state.cities, function(index, city){
+								cityselect+='<option value="'+city+'">'+city+'</option>';
+							});
+						}
+					});
+				}
+			});
+			$('#ci').html(cityselect);
+			
+		})
+		.catch(err=>{
+			console.log(err);
+		});
+	 })
+	 
+});
+</script>
+ </head>
+ <body>
+	 
+       
+      <div id = "state">
+	  <h3>DropDown list : </h3>
+          <select id="co">
+		  </select>
+		  <select id="st">
+		  </select>
+		  <select id="ci"> 
+		  </select>
+      </div>
+	 <!--  for (let i = 0; i < ct.length; i++) {
+				const country = ct[i];
+				for (let j = 0; j < country.states.length; j++) {
+					const state = country.states[j];
+					if (state.name == nam) {
+						return state;
+					}
+				}
+			} -->
+       
+      <!-- $.getJSON('city.json', function(ct){
+      		var countryselect='<option value="">Enter Country</option>';
+      		$.each(ct, function(index, country){
+      			countryselect+='<option value="'+country.name+'">'+country.name+'</option>';
+      		});  
+      		$('#co').append(countryselect);
+      		function findCountryByName(name) {
+      		  for (let i = 0; i < ct.length; i++) {
+      			if (ct[i].name === name) {
+      			  return ct[i];
+      			}
+      		  }
+      		  return null;
+      		}
+      		$('#co').change(function(){
+      			$('#st').show();
+      			var countryval=$('#co').val();
+      			$('#st').empty();
+      			var stateselect="<option value=''>Enter State</option>";
+      			if(countryval){
+      				let countryv = findCountryByName(countryval);
+      				$.each(countryv.states, function(index, states){
+      					stateselect+='<option value="'+states.name+'">'+states.name+'</option>';
+      				});
+      			}
+      			$('#st').append(stateselect);	
+      		});
+      		function findStateByName(nam) {
+      			var c=$('#co').val();
+      			var country;
+      			for(let i=0;i<ct.length;i++){
+      				if(ct[i].name==c){
+      					country = ct[i];
+      					break;
+      				}
+      			}
+      			for(let i=0;i<country.states.length;i++){
+      				const s=country.states[i];
+      				if(s.name == nam){
+      					return s;
+      				}
+      			}
+      			
+      			return null;
+      		}
+      		$('#st').change(function(){
+      			$('#ci').show();
+      			var stateval=$('#st').val();
+      			$('#ci').empty();
+      			var cityselect="<option value=''>Enter City</option>";
+      			if(stateval){
+      				var statev=findStateByName(stateval);
+      				$.each(statev.cities, function(index, city){
+      					cityselect+='<option value="'+city+'">'+city+'</option>';
+      				});
+      			}
+      			$('#ci').append(cityselect);
+      		});
+      	  }); -->
+ </body>
+</html>

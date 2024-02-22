@@ -1,0 +1,239 @@
+[
+  {
+    "name": "United States",
+    "states": [
+      {
+        "name": "California",
+        "cities": [
+          "Los Angeles",
+          "San Francisco",
+          "San Diego",
+          "San Jose",
+          "Sacramento",
+          "Fresno",
+          "Long Beach",
+          "Oakland",
+          "Bakersfield",
+          "Anaheim"
+        ]
+      },
+      {
+        "name": "Texas",
+        "cities": [
+          "Houston",
+          "San Antonio",
+          "Dallas",
+          "Austin",
+          "Fort Worth",
+          "El Paso"
+        ]
+      },
+      {
+        "name": "New York",
+        "cities": [
+          "New York",
+          "Buffalo",
+          "Rochester",
+          "Yonkers",
+          "Syracuse",
+          "Albany"
+        ]
+      },
+      {
+        "name": "Florida",
+        "cities": [
+          "Jacksonville",
+          "Miami",
+          "Tampa",
+          "St. Petersburg",
+          "Orlando",
+          "Hialeah"
+        ]
+      },
+      {
+        "name": "Illinois",
+        "cities": [
+          "Chicago",
+          "Aurora",
+          "Rockford",
+          "Naperville",
+          "Joliet",
+          "Springfield"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Canada",
+    "states": [
+      {
+        "name": "Ontario",
+        "cities": [
+          "Toronto",
+          "Ottawa",
+          "Mississauga",
+          "Brampton",
+          "Hamilton",
+          "London"
+        ]
+      },
+      {
+        "name": "Quebec",
+        "cities": [
+          "Montreal",
+          "Quebec City",
+          "Laval",
+          "Gatineau",
+          "Longueuil",
+          "Sherbrooke"
+        ]
+      },
+      {
+        "name": "British Columbia",
+        "cities": [
+          "Vancouver",
+          "Surrey",
+          "Burnaby",
+          "Richmond",
+          "Coquitlam",
+          "Abbotsford"
+        ]
+      },
+      {
+        "name": "Alberta",
+        "cities": [
+          "Calgary",
+          "Edmonton",
+          "Lethbridge",
+          "Red Deer",
+          "St. Albert",
+          "Medicine Hat"
+        ]
+      },
+      {
+        "name": "Nova Scotia",
+        "cities": [
+          "Halifax",
+          "Dartmouth",
+          "Cape Breton",
+          "Bedford",
+          "Sydney",
+          "Truro"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "India",
+    "states": [
+      {
+        "name": "Maharashtra",
+        "cities": [
+          "Mumbai",
+          "Pune",
+          "Nagpur",
+          "Thane",
+          "Navi Mumbai",
+          "Aurangabad"
+        ]
+      },
+      {
+        "name": "Tamil Nadu",
+        "cities": [
+          "Chennai",
+          "Coimbatore",
+          "Madurai",
+          "Tiruchirappalli",
+          "Salem",
+          "Erode"
+        ]
+      },
+      {
+        "name": "Karnataka",
+        "cities": [
+		  "Bangalore",
+		  "Mysore",
+		  "Mangalore",
+		  "Hubli-Dharwad",
+		  "Gulbarga",
+		  "Bijapur"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "France",
+    "states":[
+      {
+	"name": "Paris Region",
+	"cities":[
+		"Paris",
+		"Pantin",
+		"Varsailles",
+		"Bondy"
+	]
+      },
+      {
+	"name": "Brittany",
+	"cities":[
+		"Saint-Malo",
+		"Rennes",
+		"Lorient",
+		"Concarneau"
+	]
+      }
+    ]		     	
+  },
+  {
+    "name": "Turkey",
+    "states":[
+      {
+	"name": "Antalya",
+	"cities":[
+		"Demre",
+		"Kas",
+		"Kemer",
+		"Kumluca"
+	]
+      },
+      {
+	"name": "Aegean",
+	"cities":[
+		"Manisa",
+		"Aydin",
+		"Denizli",
+		"Mulga"
+	]
+      },
+      {
+	"name": "Istanbul",
+	"cities":[
+		"Beyoglu",
+		"sille"
+	]
+      }
+    ]		     	
+  },
+  {
+    "name": "Korea",
+    "states":[
+      {
+	"name": "Seoul",
+	"cities":[
+		"Guri",
+		"Anyang",
+		"Gwangmyeong",
+		"Korea"
+	]
+      },
+      {
+	"name": "Incheon",
+	"cities":[
+		"skorea",
+		"nkorea"
+	]
+      }
+    ]		     	
+  }
+]
+
