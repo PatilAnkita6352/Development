@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,440;1,440&display=swap')
+:root{
+	--primary-button:#1560bd;
+}
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  
+}
+body{
+	font-family: "Oswald", sans-serif;
+	color:#1B4F72 ;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+}
+p{
+	margin:0.7%;;
+}
+.boxdiv{
+	padding-top:1%;
+	border: 1px solid #D4E6F1;
+	border-radius: 2px;
+}
+.button{
+	background-color: #0070BB;
+	color: white;
+	font-weight:bold;
+	width: 35%;
+	padding: 2%;
+	border:none;
+	border-radius:5px;
+
+}
+.move{
+	float: right;
+}
+.button:hover{
+	background-color: #76ABDF;
+	color:black;
+}
+.tableHead{
+	background-color: #CCCCFF;
+}
+
+input[type=text] {
+  width: 100%;
+  padding:0.5%;
+  box-sizing: border-box;
+  border: 1px solid #D4E6F1; 
+  color:#1B4F72 ;
+  border-radius: 4px;
+ } 
+.headline{
+	background-color: #76ABDF;
+}
+.divinput{
+	padding-top:1%;
+	padding-bottom:2%;
+}
+table{
+	width: 100%;
+}
+th{
+	background-color:#D4E6F1 ;
+	padding: 5px;
+}
+.cr{
+	margin-left:1px;
+	width: 98%;
+}
+.bg{
+	background-color:#E5E8E8 ;
+}
+td{
+	 border-bottom: 1px solid #E5E8E8;
+	 padding-bottom: 2px;
+}
+small{
+color: red;
+}

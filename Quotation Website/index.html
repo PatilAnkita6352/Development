@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel='stylesheet' href='style.css'>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<title>Quotation Calculator</title>
+</head>
+<body>
+<div>
+	<div class='row m-1'>
+		<div class='row p-1 headline' ><h4><b><label class='m-3'> Update Purchase indent Quotation</label></b></h4></div>
+		<hr>
+		<div class='row'>
+			<div class='col-md-6'>
+				<p><b>Indent No:</b> 2023-24/INDNT-00017</p>
+				<p><b>Tentative Date of Receipt: </b></p>
+				<p><b>Address By:</b> Kalpak Luniya</p>
+				<p><b>Status:</b> Finalized</p>
+			</div>
+			<div class='col-md-6'>
+				<p><b>Indent Date:</b> 14 Feb 2024</p>
+				<p><b>Remark: </b></p>
+				<p><b>Added Date:</b> 14 Feb 2024, 04:04 PM</p>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-6 boxdiv'>
+			    <h5><b>Hydrotek Engineers</b></h5>
+				<p>Ambegaon</p>
+				<p>Pune, Maharashtra, India, 411030</p>
+				<div class='row'>
+					<div class='col-md-6'><b>Contact No: </b>020-8987445745</div>
+					<div class='col-md-6'><b>Email: </b>hydrotekgts@gmail.com</div>
+				</div>
+				<br>
+				<br>
+				<div class='row'>
+					<div class='col-md-6'><button class='button'>Submit</button></div>
+					<div class='col-md-6'><button class='button move'>Change</button></div>
+				</div>
+				<br>
+			</div>
+			<div class='col-md-6 boxdiv'>
+			    <h5><b>123 Infotech</b></h5>
+				<p>Surat, Gujrat, India, 543534</p>
+				<p>Pune, Maharashtra, India, 411030</p>
+				<div class='row'>
+					<div class='col-md-6'><b>Contact No: </b></div>
+					<div class='col-md-6'><b>Email: </b></div>
+				</div>
+				<div class='row'>
+					<div class='col-md-6'><b>GSTIN: </b>65AAAAA9999A1Z9</div>
+					<div class='col-md-6'><b>Status: </b>Registered</div>
+				</div>
+				<br>
+				<div class='row'>
+					<div class='col-md-6'><button class='button'>Submit</button></div>
+					<div class='col-md-6'><button class='button move'>Change</button></div>
+				</div>
+				<br>
+			</div>
+		</div>
+		<div class='row divinput'>
+		    <div class='row'>
+				<div class='col md-6'>
+					<label><small>*</small>Quotation No: </label><br>
+					<input type='text' placeholder='Quotation No'>	
+				</div>
+				<div class='col md-6'>
+					<label><small>*</small>Quotation Date: </label><br>
+					<input type='text' placeholder='Quotation Date'>	
+				</div>
+			</div>
+			<div class='row cr'>
+					<label><small>*</small>Currency: </label><br>
+					<input type='text' placeholder='Currency'>
+			</div>
+		</div>
+		<div class='row'>
+		    <div class='tabel-responsive-md'>
+				<table id='mytable'>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Item Name</th>
+							<th>Indent Qty</th>
+							<th>Qty</th>
+							<th>Rate</th>
+							<th>Discount%</th>
+							<th>GST%</th>
+							<th>Amount</th>
+							<th>GST% Including</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>MS BLACK ROUND DIA 30 (RBMS30) [RBMS30]</td>
+							<td>0.26 Kg</td>
+							<td><input type='text' class='qty' value='0.26' ></td>
+							<td><input type='text' class='rate'></td>
+							<td><input type='text' class='discount'></td>
+							<td><input type='text' class='mgst' value='18.00'></td>
+							<td><p class='total bg'></p></td>
+							<td><p class='gst bg'></p></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>MS Plate 250BR 16 (RPB16) [RPB16]</td>
+							<td>49.17 Kg</td>
+							<td><input type='text' class='qty' value='49.17'></td>
+							<td><input type='text' class='rate'></td>
+							<td><input type='text' class='discount'></td>
+							<td><input type='text' class='mgst' value='18.00'></td>
+							<td><p class='total bg'></p></td>
+							<td><p class='gst bg'></p></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>SHIM-85X10 (SH-85X10) [SH-85X10]</td>
+							<td>4 Nos</td>
+							<td><input type='text' class='qty' value='4' ></td>
+							<td><input type='text' class='rate' ></td>
+							<td><input type='text' class='discount'></td>
+							<td><input type='text' class='mgst' value='18.00'></td>
+							<td><p class='total bg'></p></td>
+							<td><p class='gst bg'></p></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>SHIM-85X30 (SH-85X30) [SH-85X30]</td>
+							<td>4 Nos</td>
+							<td><input type='text' value='4' class='qty'></td>
+							<td><input type='text' class='rate'></td>
+							<td><input type='text' class='discount'></td>
+							<td><input type='text' class='mgst' value='18.00'></td>
+							<td><p class='total bg'></p></td>
+							<td><p class='gst bg'></p></td>
+						</tr>
+						<tr >
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><b>P&F Charges (Rs.)</b></td>
+							<td><input type='text' id='pf'></td>
+							<td><p class='maxGST bg'></p></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><b>Transport Charges (Rs.)</b></td>
+							<td><input type='text'id='tc'></td>
+							<td><p class='maxGST bg'></p></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><b>IGST</b></td>
+							<td><p class='bg'id='igst'></td>
+							<td><p class='bg'></p></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><b>Total Amount </b></td>
+							<td><p class='bg' id='final'></p></td>
+							<td><p class='bg'></p></td>
+						</tr>
+				
+					</tbody>
+				</table>
+			<div>
+		</div>
+	</div>
+</div>
+	<script type = "text/javascript" src='JSscript.js'></script>
+</body>
+</html>
