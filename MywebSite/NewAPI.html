@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+  <script> 
+  $(document).ready(function(){ 
+	  fetch('https://www.universal-tutorial.com/api/countries/', { 
+		  method: 'GET', 
+		  mode: 'cors', 
+		  headers: {
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Method' : 'POST, GET',
+			'Accept': 'application/json', 
+			'Content-Type': 'application/json'
+		} 
+	   }) 
+	  .then(response => response.json())
+	  .then(data => console.log(data)); 
+	}); 
+  </script>
+  <title>Document</title>
+ </head>
+ <body>
+ <h1>Hello</h1>
+  
+	<!-- fetch('http://hydrotekgts.syna.in/api/companyapi/getcountries', {
+	        method: 'POST',
+	        headers: {
+	            'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Method' : 'POST, GET',
+	            'Accept': 'application/json',
+	            'Content-Type': 'application/json'
+	        },
+	        body: { authenticationKey: "368ad3d7-a138-4915-96b0-791735cee8d8" }
+	    })
+	    .then(response => response.text())
+	    .then((response) => updateResponse(response))
+	    .catch(error => console.error(error));
+	  </script> -->
+
+
+	 <!--  fetch('https://www.universal-tutorial.com/api/countries/')
+	  		.then(response=> response.json())
+	  		.then(data => JSON.stingify(response), function(){
+	  			alert(data);
+	  		}); -->
+ </body>
+</html>
